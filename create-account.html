@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <h1>Welcome to Our Website!</h1>
+            <p>Please create an account to access our services.</p>
+        </header>
+        <form id="createAccountForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+
+    <script src="js/script.js">
+        
+            document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+            
+                const fullName = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+            
+                // Save full name and email to localStorage
+                localStorage.setItem('userFullName', fullName);
+                localStorage.setItem('userEmail', email);
+            
+                alert('Account created successfully!');
+                // Optionally, redirect to another page
+                // window.location.href = 'payment-history.html';
+            });
+            
+    </script>
+</body>
+</html>
