@@ -6,7 +6,7 @@ This repository contains the code for the **E-Learning Web** project.
 
 Some files, such as resources or assets, are hosted on Google Drive due to size limitations. You can access them using the link below:
 
-[View Files on Google Drive](https://drive.google.com/drive/folders/1tMd_v7o0Wj0DHm2mQnghIRKninXkz1EV?usp=sharing)
+[View Files on Google Drive]
 
 ---
 
